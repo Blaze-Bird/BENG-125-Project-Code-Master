@@ -2,16 +2,23 @@
 % will probably end up with 3-4 other scripts to run with this one
 
 % Things which will be calculated so give initial values
-Mp =   %mRNA for PER
-Mt =   %mRNA for TIM
-T1 =    % unphosphorylated TIM
-T2 =    % monophosphorylated TIM
-P0 =    %Native protein
-P1 =     %monophosphorylated protein
-P2 =      %biphosphorylated protein
-Pn =        % Nuclear protein
-C =        % PER-TIM complex concentration
-Cn =        % PER-TIM complex in the nucleus which is a repressor
+Mp =   % mRNA for PER
+Mt =   % mRNA for TIM
+T0 =   % unphosphorylated TIM
+T1 =   % monophosphorylated TIM
+T2 =   % binophosphorylated TIM
+P0 =   % Native protein
+P1 =   % monophosphorylated protein
+P2 =   % biphosphorylated protein
+Pn =   % Nuclear protein
+C =    % PER-TIM complex concentration
+Cn =   % PER-TIM complex in the nucleus which is a repressor
+
+% Time parameters
+T = 24; % one full cycle of experiment
+Tnight = 12; % time of the cycle which is dark
+dt = .01*T; % duration of time step in hours
+klokmax = 3*T/dt; % total number of timesteps, currently 3 cycles
 
 % parameters
 n = 4; % number of equations?

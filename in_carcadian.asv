@@ -1,7 +1,7 @@
 % the initialization parameters for the system we are creating
 % will probably end up with 3-4 other scripts to run with this one
 
-n = 4; % number of equations?
+% Things which will be calculated so give initial values
 Mp =   %mRNA for PER
 Mt =   %mRNA for TIM
 T1 =    % unphosphorylated TIM
@@ -12,6 +12,14 @@ P2 =      %biphosphorylated protein
 Pn =        % Nuclear protein
 C =        % PER-TIM complex concentration
 Cn =        % PER-TIM complex in the nucleus which is a repressor
+
+% Time parameters
+T = 72; % duration of the experiment in hours
+dt = .01*T; % duration of time step in hours
+klokmax = 15*T/dt
+
+% parameters
+n = 4; % number of equations?
 kdc = 0.01;        % degradation rate of PER-TIM in cytoplasm per hour
 kdn = 0.01;      % degradation of PER-TIM in nucleus per hour
 kd = 0.01;        % as kd increases oscilations increase, linear degradation term, per hour
@@ -44,10 +52,10 @@ V2p = 1*10^-9;
 V3p = 8*10^-9;
 V4p = 1*10^-9;
 % Max rate of formation of the phosphoralization of TIM
-V1t = 
-V2t = 
-V3t = 
-V4t = 
+V1t = 8*10^-9;
+V2t = 1*10^-9;
+V3t = 8*10^-9;
+V4t = 1*10^-9;
 % Michalis constant of phosphoralization of PER
 KIp = 1*10^-9;
 Kdp = 0.2*10^-9; % constant for disassociation of PER
