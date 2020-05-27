@@ -1,0 +1,6 @@
+% code which runs the equations and is hopefully able to graph
+% concentrations
+% file name: model_dis
+clear all;
+clf;
+global T, t

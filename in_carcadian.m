@@ -10,7 +10,6 @@ T2 =   % binophosphorylated TIM
 P0 =   % Native protein
 P1 =   % monophosphorylated protein
 P2 =   % biphosphorylated protein
-Pn =   % Nuclear protein
 C =    % PER-TIM complex concentration
 Cn =   % PER-TIM complex in the nucleus which is a repressor
 
